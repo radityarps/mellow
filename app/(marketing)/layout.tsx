@@ -5,7 +5,9 @@ const MarketingLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="h-full">
       <Navbar />
-      <main className="h-[90%] bg-white">{children}</main>
+      <main className="h-[90%] flex justify-center items-center bg-white">
+        {children}
+      </main>
       <Footer />
     </div>
   );

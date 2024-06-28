@@ -2,6 +2,14 @@ import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+import { cn } from "@/lib/utils";
+import { Montserrat } from "next/font/google";
+
+const Font = Montserrat({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
 export const Footer = () => {
   return (
     <div className="relative bottom-0 bg-[#1D1D1D] h-[15%] w-full">
@@ -29,7 +37,12 @@ export const Footer = () => {
           ></path>
         </svg>
       </div>
-      <div className="relative -top-5 flex px-16 pb-8 bg-[#1D1D1D] justify-between items-center">
+      <div
+        className={cn(
+          "relative -top-5 flex px-16 pb-8 bg-[#1D1D1D] justify-between items-center",
+          Font.className
+        )}
+      >
         <div className="flex flex-col gap-2 max-w-[50%] text-[13px] text-white">
           <Logo size={100} />
           is the flexible work management tool where teams can ideate plans,
