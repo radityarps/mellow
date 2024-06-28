@@ -29,9 +29,9 @@ export const Footer = () => {
           ></path>
         </svg>
       </div>
-      <div className="relative -top-5 flex px-16 justify-between items-center">
-        <div className="flex flex-col gap-2 max-w-[50%] text-[12px] text-white">
-          <Logo size={90} />
+      <div className="relative -top-5 flex px-16 pb-8 bg-[#1D1D1D] justify-between items-center">
+        <div className="flex flex-col gap-2 max-w-[50%] text-[13px] text-white">
+          <Logo size={100} />
           is the flexible work management tool where teams can ideate plans,
           collaborate on projects, organize workflows, and track progress in a
           visual, productive, and rewarding way. From brainstorm to planning to
