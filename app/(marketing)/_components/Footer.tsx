@@ -39,19 +39,25 @@ export const Footer = () => {
       </div>
       <div
         className={cn(
-          "relative -top-5 flex px-16 pb-8 bg-[#1D1D1D] justify-between items-center",
+          "relative -top-5 flex sm:flex-row flex-col sm:px-16 px-6 sm:gap-0 gap-4 pb-8 bg-[#1D1D1D] justify-between items-center",
           Font.className
         )}
       >
-        <div className="flex flex-col gap-2 max-w-[50%] text-[13px] text-white">
+        <div className="flex flex-col text-justify gap-2 sm:max-w-[50%] w-full sm:text-[13px] text-[10px] text-white">
           <Logo size={100} />
-          is the flexible work management tool where teams can ideate plans,
-          collaborate on projects, organize workflows, and track progress in a
-          visual, productive, and rewarding way. From brainstorm to planning to
-          execution, Mellow manages the big milestones and the day-to-day tasks
-          of working together and getting things done.
+          <div>
+            <span className="md:hidden">Mellow</span> is the flexible work
+            management tool where teams can ideate plans, collaborate on
+            projects, organize workflows, and track progress in a visual,
+            productive, and rewarding way. From brainstorm to planning to
+            execution, Mellow manages the big milestones and the day-to-day
+            tasks of working together and getting things done.
+          </div>
         </div>
-        <p className="text-white text-[12px]">Copyright © 2024</p>
+
+        <p className="text-white sm:text-[12px] text-[10px]">
+          Copyright © 2024
+        </p>
       </div>
     </div>
   );
