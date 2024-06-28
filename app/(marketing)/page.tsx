@@ -6,7 +6,7 @@ const Font = Montserrat({
 });
 
 const MarketingPage = () => {
-  return <div className="">TEst</div>;
+  return <div className=""></div>;
 };
 
 export default MarketingPage;
