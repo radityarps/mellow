@@ -17,7 +17,7 @@ export const Navbar = () => {
         <Logo />
         <div
           className={cn(
-            "md:block md:w-auto flex items-center justify-between w-full",
+            "md:w-auto flex items-center gap-x-2 justify-between w-full",
             Font.className
           )}
         >
