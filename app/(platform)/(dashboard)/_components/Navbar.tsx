@@ -4,7 +4,7 @@ import { Search } from "lucide-react";
 
 export const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full h-14 px-4 border-b shadow-sm bg-white flex items-center">
+    <nav className="w-full h-14 px-4 border-b shadow-sm bg-white flex items-center">
       <div className="md:max-w-screen-2xl xl:mx-16 2xl:mx-auto flex items-center w-full justify-between">
         <Logo />
         <div className="flex items-center gap-x-6">
