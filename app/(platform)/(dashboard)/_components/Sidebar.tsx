@@ -54,8 +54,8 @@ export const Sidebar = ({ storageKey = "m-sidebar-state" }: SidebarProps) => {
 
   return (
     <>
-      <div className="font-semibold flex items-center rounded-t-2xl bg-[#2B72B4]">
-        <span className="pl-4 text-white">Workspaces</span>
+      <div className="font-semibold flex items-center rounded-t-2xl md:bg-[#2B72B4]">
+        <span className="pl-4 md:text-white">Workspaces</span>
         <Button
           asChild
           type="button"
@@ -64,6 +64,7 @@ export const Sidebar = ({ storageKey = "m-sidebar-state" }: SidebarProps) => {
           className="ml-auto hover:bg-transparent"
         >
           <Link href="/select-org">
+            <Plus className="h-4 w-4 md:hidden" />
             <Plus className="h-4 w-4" color="white" />
           </Link>
         </Button>
@@ -71,7 +72,7 @@ export const Sidebar = ({ storageKey = "m-sidebar-state" }: SidebarProps) => {
       <Accordion
         type="multiple"
         defaultValue={defaultAccordionValue}
-        className="space-y-2 border rounded-b-lg py-2"
+        className="space-y-2 md:border rounded-b-lg py-2"
       >
         {userMemberships.data?.map((membership) => (
           <NavItem

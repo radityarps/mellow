@@ -1,10 +1,12 @@
 import { Logo } from "@/components/ui/Logo";
 import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
 import { Search } from "lucide-react";
+import { MobileSidebar } from "./mobile-sidebar";
 
 export const Navbar = () => {
   return (
     <nav className="w-full h-14 px-4 border-b shadow-sm bg-white flex items-center">
+      <MobileSidebar />
       <div className="md:max-w-screen-2xl xl:mx-16 2xl:mx-auto flex items-center w-full justify-between">
         <Logo />
         <div className="flex items-center gap-x-6">
